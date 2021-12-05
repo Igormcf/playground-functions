@@ -44,8 +44,18 @@ function generatePhoneNumber(numeros) {
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(l1, l2, l3) {
+  let somaL1L2 = l1 + l2;
+  let somaL1L3 = l1 +l3;
+  let somaL2L3 = l2 + l3;
+  let abs3 = Math.abs(l1 - l2);
+  let abs2 = Math.abs(l1 - l3);
+  let abs1 = Math.abs(l2 - l3);
+  if (l3 > somaL1L2 || l3 < abs3 || l2 > somaL1L3 || l2 < abs2 || l1 > somaL2L3 || l1 < abs1){
+    return false;
+  } else {
+    return true;
+  }
 }
 
 // Desafio 13
