@@ -71,7 +71,6 @@ function hydrate(frase) {
   } else {
     return soma + " copos de água";
   }
-  
 }
 
 module.exports = {
