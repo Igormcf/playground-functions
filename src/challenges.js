@@ -1,4 +1,4 @@
-// Desafio 1
+// Desafio 1 - Crie uma função usando o operador &&
 function compareTrue(a, b) {
   if (a === true && b === true) {
     return true;
@@ -7,25 +7,25 @@ function compareTrue(a, b) {
   }
 }
 
-// Desafio 2
+// Desafio 2 - Crie uma função que calcule a área de um triângulo
 function calcArea(base, altura) {
   let area = (base * altura) / 2;
   return area;
 }
 
-// Desafio 3
+// Desafio 3 - Crie uma função que divida a frase
 function splitSentence(frase) {
   let arrayString = frase.split(" ");
   return arrayString;
 }
 
-// Desafio 4
+// Desafio 4 - Crie uma função que use concatenação de strings
 function concatName(array) {
   let lastFirst = array[array.length - 1] + ',' + ' ' + array[0];
   return lastFirst;
 }
 
-// Desafio 5
+// Desafio 5 - Crie uma função que calcule a quantidade de pontos no futebol
 function footballPoints(wins, ties) {
   let pontosW = wins * 3;
   let pontosT = ties * 1;
@@ -34,7 +34,7 @@ function footballPoints(wins, ties) {
   return pontuacaoTotal;
 }
 
-// Desafio 6
+// Desafio 6 - Crie uma função que calcule a repetição do maior número
 function highestCount(array) {
   let numMaior = array[0];
   let numRepeticao = 0; 
@@ -52,7 +52,7 @@ function highestCount(array) {
   return numRepeticao;
 }
 
-// Desafio 7
+// Desafio 7 - Crie uma função de Caça ao Rato
 function catAndMouse(mouse, cat1, cat2) {
   let distanceMouseC1 = Math.abs(mouse - cat1);
   let distanceMouseC2 = Math.abs(mouse - cat2);
@@ -66,7 +66,7 @@ function catAndMouse(mouse, cat1, cat2) {
   }
 }
 
-// Desafio 8
+// Desafio 8 - Crie uma função FizzBuzz
 function fizzBuzz(array) {
   let resultado = [];
   for (let index in array){
@@ -84,7 +84,7 @@ function fizzBuzz(array) {
   return resultado;
 }
 
-// Desafio 9
+// Desafio 9 - Crie uma função que Codifique e Decodifique
 function encode(string1) {
   let novaFrase = string1.replace(/a/g, 1).replace(/e/g, 2).replace(/i/g, 3).replace(/o/g, 4).replace(/u/g, 5);
   return novaFrase;
